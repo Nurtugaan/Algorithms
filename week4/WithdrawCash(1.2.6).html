@@ -1,0 +1,31 @@
+
+<title>ATM</title>
+
+<pre>
+<b>ALGORITHM</b> WithdrawCash(card, pin, amount)
+
+    <b>if</b> card is invalid
+        <b>return</b> "Invalid card"
+
+    <b>if</b> pin is incorrect
+        <b>return</b> "Incorrect PIN"
+
+    <b>if</b> amount ≤ 0
+        <b>return</b> "Invalid amount"
+
+    <b>if</b> amount > account_balance
+        <b>return</b> "Insufficient funds"
+
+    <b>if</b> amount > atm_cash
+        <b>return</b> "ATM has insufficient cash"
+
+    <b>if</b> amount cannot be dispensed
+        <b>return</b> "Invalid amount"
+
+    account_balance ← account_balance - amount
+    atm_cash ← atm_cash - amount
+
+    dispense amount in banknotes
+
+    <b>return</b> "Cash dispensed successfully"
+</pre>

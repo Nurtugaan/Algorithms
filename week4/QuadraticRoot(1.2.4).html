@@ -1,0 +1,30 @@
+
+<title>QuadraticRoots</title>
+
+<pre>
+<b>ALGORITHM</b> FindRoots(a, b, c)
+
+    <b>if</b> a = 0
+        <b>if</b> b = 0
+            <b>if</b> c = 0
+                <b>return</b> "All real numbers"
+            <b>else</b>
+                <b>return</b> "No real roots"
+        <b>else</b>
+            x ← -c / b
+            <b>return</b> x
+
+    D ← b * b - 4 * a * c
+
+    <b>if</b> D < 0
+        <b>return</b> "No real roots"
+
+    <b>else if</b> D = 0
+        x ← -b / (2 * a)
+        <b>return</b> x
+
+    <b>else</b>
+        x1 ← (-b + sqrt(D)) / (2 * a)
+        x2 ← (-b - sqrt(D)) / (2 * a)
+        <b>return</b> x1, x2
+</pre>

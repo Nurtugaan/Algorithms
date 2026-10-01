@@ -1,0 +1,47 @@
+
+<title>GCD Proof</title>
+
+<pre>
+<b>PROOF</b>
+
+Let
+
+m = nq + r
+
+where r = m mod n.
+
+Then
+
+r = m − nq.
+
+Suppose d divides both m and n.
+
+Since d divides m and d divides n,
+
+d divides (m − nq).
+
+Therefore, d divides r.
+
+So every common divisor of m and n
+is also a common divisor of n and r.
+
+Now suppose d divides both n and r.
+
+Since
+
+m = nq + r,
+
+d divides m.
+
+Therefore, every common divisor of n and r
+is also a common divisor of m and n.
+
+Thus the pairs (m, n) and (n, r)
+have exactly the same common divisors.
+
+Since r = m mod n,
+
+<b>gcd(m, n) = gcd(n, m mod n).</b>
+
+<b>Q.E.D.</b>
+</pre>

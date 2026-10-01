@@ -1,0 +1,18 @@
+
+<title>SquareRoot</title>
+
+<pre>
+<b>ALGORITHM</b> Sqrt(n)
+    low ← 0
+    high ← n
+
+    <b>while</b> low ≤ high
+        mid ← (low + high) / 2
+
+        <b>if</b> mid * mid ≤ n
+            low ← mid + 1
+        <b>else</b>
+            high ← mid - 1
+
+    <b>return</b> high
+</pre>
